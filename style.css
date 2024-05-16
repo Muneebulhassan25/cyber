@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 99;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+nav button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+}
+#main {
+  position: relative;
+  overflow: hidden;
+  background-color: #2d2d2d;
+}
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: #2d2d2d;
+  position: relative;
+}
+.page > canvas {
+  max-width: 100%;
+  max-height: 100vh;
+  position: relative;
+  z-index: 9;
+}
+.page1 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+.loop {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.loop h1 {
+  font-size: 170px;
+  font-weight: 100;
+  display: inline-block;
+  color: #fff;
+  animation: loop 15s linear infinite reverse;
+}
+.loop h1 span {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+@keyframes loop {
+  to {
+    transform: translateX(0%);
+  }
+  from {
+    transform: translateX(-100%);
+  }
+}
+.page1 p {
+  width: 30%;
+  font-size: 15px;
+  color: white;
+  margin-left: 3vw;
+}
+.page2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  color: #fff;
+}
+.page2-inner2 {
+  text-align: end;
+  margin-top: 15vw;
+}
+.page2 h5 {
+  font-weight: 100;
+}
+.page2 h1 {
+  font-size: 3vw;
+  margin: 1vw 0;
+}
+.page3 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  color: #fff;
+  z-index: 10;
+}
+.page3-inner2 {
+  text-align: end;
+  margin-top: 15vw;
+  width: 40%;
+}
+.page3 .page3-inner1 h5 {
+  font-weight: 100;
+}
+.page3 .page3-inner1 h1 {
+  font-size: 3vw;
+  margin: 1vw 0;
+}
+.page4 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  color: #fff;
+  z-index: 10;
+}
+.page4-inner2 {
+  text-align: end;
+  margin-top: 15vw;
+  /* width: 40%; */
+}
+.page4-inner1 {
+  width: 40%;
+}
+.page4 .page4-inner2 h5 {
+  font-weight: 100;
+}
+.page4 .page4-inner2 h1 {
+  font-size: 3vw;
+  margin: 1vw 0;
+}
+.page5 {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 15vw;
+  flex-direction: column;
+  text-align: center;
+}
+.page5 h5 {
+  font-weight: 100;
+  font-size: 16px;
+}
+.page5 h1 {
+  font-size: 4vw;
+}
+.page5 p {
+  width: 50%;
+  margin-top: 0.5vw;
+}
+.img-slide-wrapper {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  bottom: 0;
+}
+.img-slide {
+  display: inline-block;
+  animation: imgSlide 18s linear infinite reverse;
+}
+.img-slide img {
+  width: 320px;
+}
+@keyframes imgSlide {
+  to {
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(-100%);
+  }
+}
+.page6 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  border-bottom: 1px dashed white;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3vw;
+}
+.page6 h1 {
+  font-size: 65px;
+  font-weight: 600;
+  color: white;
+}
+.page6 h5 {
+  font-size: 14px;
+  color: white;
+  font-weight: 100;
+}
+.page6-bottom {
+  width: 80%;
+  margin-top: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.bottom6-inner {
+  background-color: white;
+  width: 22vw;
+  height: 30vh;
+  border-radius: 10px;
+  padding: 2vw;
+}
+.bottom6-inner h3 {
+  margin: 0.5vw 0;
+}
+.bottom6-inner p {
+  font-size: 14px;
+}
+.page7 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 12vw;
+  color: #fff;
+}
+.page7 h1 {
+  font-size: 60px;
+}
+.page7 h5 {
+  font-weight: 100;
+}
+.page7-top {
+  width: 100%;
+  height: 80vh;
+  padding-top: 3vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.page7-top img {
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+}
+.allLoop {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.allLoop h1 {
+  display: inline-block;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 130px;
+  line-height: 0.9;
+}
+.page7-loop1 h1 {
+  animation: allloop 20s linear infinite;
+}
+.page7-loop2 h1 {
+  animation: allloop 20s linear infinite reverse;
+}
+.page7-loop3 h1 {
+  animation: allloop 20s linear infinite;
+}
+@keyframes allloop {
+  to {
+    transform: translateX(0%);
+  }
+  from {
+    transform: translateX(-100%);
+  }
+}
+.page7 h3 {
+  font-size: 25px;
+  margin-top: 2vw;
+}
+.page7 h4 {
+  font-weight: 100;
+  line-height: 2;
+}
+.page7 p {
+  width: 50%;
+  line-height: 1.5;
+  /* font-size: 14px; */
+}
+.line {
+  margin: 3vw;
+  width: 1px;
+  height: 170px;
+  background-color: white;
+}
+.page7 h2 {
+  font-size: 4.5vw;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 1vw;
+}
+.page7-bottom {
+  width: 100%;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.btn button {
+  padding: 0.5vw 3.5vw;
+  font-size: 14px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: all 0.5s;
+}
+.btn button:hover {
+  background-color: white;
+  color: black;
+}
+.page7-bottom h1 {
+  font-size: 12vw;
+  text-align: center;
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 1.5px white;
+  line-height: 0.9;
+  margin-top: 2vw;
+}
